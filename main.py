@@ -13,7 +13,7 @@ root.geometry("400x100")
 root.title("LOSTARK - Skipper")
 root.iconphoto(True, img)
 
-pathframe = tk.LabelFrame(root, text="Steam Executeable Path")
+pathframe = tk.LabelFrame(root, text="Steam Executable Path")
 pathframe.place(height=100, width=400, relx=0)
 
 # Buttons
@@ -23,11 +23,11 @@ steambutton.place(rely=0.65, relx=0.35)
 startbutton = tk.Button(pathframe, text="Start", command=lambda: _main_loop())
 startbutton.place(rely=0.65, relx=0.55)
 
-label_steam = ttk.Label(pathframe, text="No Steam Executeable selected")
+label_steam = ttk.Label(pathframe, text="No Steam Executable selected")
 label_steam.place(rely=0, relx=0)
 
 def _steam_dialog():
-    steampath = filedialog.askopenfilename(initialdir="C:\\Program Files (x86)\\Steam\\", title="Select Steam Executeable", filetype=[("Applications", "*.exe")])
+    steampath = filedialog.askopenfilename(initialdir="C:\\Program Files (x86)\\Steam\\", title="Select Steam Executable", filetype=[("Applications", "*.exe")])
     label_steam["text"] = steampath
     return None
 
