@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "lostark"
+version = "0.1.0"
+description = "Tool to wait LOSTARK queue and prevent from getting kicked"
+authors = ["Taikador"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+psutil = "^5.9.0"
+PyAutoGUI = "^0.9.53"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
