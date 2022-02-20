@@ -69,7 +69,7 @@ def _stay_connected():
         pyautogui.moveTo(249, 1011)
         pyautogui.click()
         time.sleep(wait_time)
-        pyautogui.moveTo(187, 1007)
+        pyautogui.moveTo(210, 1016)
         pyautogui.click()
 
 root.mainloop()
